@@ -28,7 +28,6 @@ const de: Dictionary = {
     search: "Projekte suchen (z. B. Trafo, Gdynia, Reaktor)",
     noResults: "Keine passenden Projekte gefunden.",
     openPhoto: "Foto vergrößern",
-    facebook: "Heavy Lift Service auf Facebook",
   },
   nav: {
     about: "Unternehmen",
@@ -185,7 +184,6 @@ const de: Dictionary = {
     email: "E-Mail",
     nip: "Steuer-Nr. (NIP)",
     bdo: "BDO-Nummer",
-    social: "Soziale Medien",
     mapHeading: "So finden Sie uns",
     mapLoad: "Google Maps anzeigen",
     mapConsent: "Nach dem Klick wird die Karte von Google-Servern geladen, die Cookies setzen können.",
@@ -194,6 +192,7 @@ const de: Dictionary = {
   footer: {
     about: "Umschlag und Transport von Übermaß- und Schwergütern. Häfen und Werften in Polen und Europa.",
     copyright: "Heavy Lift Service Szczecin Port",
+    credit: "Website von",
   },
   notFound: {
     title: "Seite nicht gefunden",

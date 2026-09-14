@@ -26,7 +26,6 @@ const pl = {
     search: "Szukaj realizacji (np. Trafo, Gdynia, Reaktor)",
     noResults: "Brak realizacji pasujących do wyszukiwania.",
     openPhoto: "Powiększ zdjęcie",
-    facebook: "Heavy Lift Service na Facebooku",
   },
   nav: {
     about: "O firmie",
@@ -185,7 +184,6 @@ const pl = {
     email: "E-mail",
     nip: "NIP",
     bdo: "Numer BDO",
-    social: "Media społecznościowe",
     mapHeading: "Jak do nas trafić",
     mapLoad: "Pokaż mapę Google",
     mapConsent: "Po kliknięciu mapa zostanie wczytana z serwerów Google, które mogą zapisywać pliki cookies.",
@@ -194,6 +192,7 @@ const pl = {
   footer: {
     about: "Przeładunek i przemieszczanie ładunków ponadgabarytowych oraz sztuk ciężkich. Porty i stocznie w Polsce i Europie.",
     copyright: "Heavy Lift Service Szczecin Port",
+    credit: "Realizacja strony:",
   },
   notFound: {
     title: "Nie znaleziono strony",

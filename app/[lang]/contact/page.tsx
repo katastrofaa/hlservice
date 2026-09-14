@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
-import { DocIcon, ExternalIcon, FacebookIcon, FaxIcon, MailIcon, PhoneIcon, PinIcon } from "@/components/icons";
+import { DocIcon, ExternalIcon, FaxIcon, MailIcon, PhoneIcon, PinIcon } from "@/components/icons";
 import { MapEmbed } from "@/components/MapEmbed";
 import { PageHeader } from "@/components/PageHeader";
 import { getDictionary, pageMetadata } from "@/lib/i18n";
@@ -108,11 +108,6 @@ export default async function ContactPage({ params }: PageProps<"/[lang]/contact
                 {t.nip}: {site.nip}
                 <br />
                 {t.bdo}: {site.bdo}
-              </Row>
-              <Row icon={<FacebookIcon className="h-5 w-5" />} label={t.social}>
-                <a href={site.facebook} target="_blank" rel="noopener noreferrer" className="hover:text-brand-red">
-                  Facebook
-                </a>
               </Row>
             </dl>
           </div>

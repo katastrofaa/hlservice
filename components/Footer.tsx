@@ -3,7 +3,7 @@ import type { Dictionary } from "@/content/pl";
 import { href, type Locale, type RouteKey } from "@/lib/routes";
 import { site } from "@/lib/site";
 import { Logo } from "./Logo";
-import { FacebookIcon, MailIcon, PhoneIcon } from "./icons";
+import { MailIcon, PhoneIcon } from "./icons";
 
 const navKeys: Exclude<RouteKey, "home">[] = ["about", "services", "gallery", "references", "contact"];
 
@@ -17,15 +17,6 @@ export function Footer({ lang, dict }: { lang: Locale; dict: Dictionary }) {
             <Logo tone="light" />
           </Link>
           <p className="mt-5 max-w-sm leading-relaxed">{dict.footer.about}</p>
-          <a
-            href={site.facebook}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mt-6 inline-flex items-center gap-2 text-white transition-colors hover:text-brand-red"
-          >
-            <FacebookIcon className="h-5 w-5" />
-            <span className="text-sm">{dict.ui.facebook}</span>
-          </a>
         </div>
 
         <div className="lg:col-span-2">
@@ -86,9 +77,12 @@ export function Footer({ lang, dict }: { lang: Locale; dict: Dictionary }) {
           <p>
             Copyright © {new Date().getFullYear()} {dict.footer.copyright}
           </p>
-          <a href={`mailto:${site.email}`} className="hover:text-white">
-            {site.email}
-          </a>
+          <p>
+            {dict.footer.credit}{" "}
+            <a href="https://desflow.pl/" target="_blank" rel="noopener" className="font-semibold text-navy-100 transition-colors hover:text-white">
+              Desflow
+            </a>
+          </p>
         </div>
       </div>
     </footer>

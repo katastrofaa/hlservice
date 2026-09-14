@@ -15,6 +15,5 @@ export const site = {
   ],
   fax: "+48 91 881 25 77",
   email: "biuro@hlservice.pl",
-  facebook: "https://www.facebook.com/profile.php?id=100092200929617",
   mapsQuery: "Bytomska 11, 70-603 Szczecin, Polska",
 } as const;

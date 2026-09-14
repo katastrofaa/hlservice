@@ -16,7 +16,7 @@ npm run build && npm start
 | Ścieżka | Zawartość |
 | --- | --- |
 | `content/pl.ts`, `en.ts`, `de.ts` | Wszystkie teksty strony (PL = źródło, EN/DE muszą mieć ten sam kształt) |
-| `lib/site.ts` | Dane firmy: adres, telefony, NIP, BDO, e-mail, Facebook |
+| `lib/site.ts` | Dane firmy: adres, telefony, NIP, BDO, e-mail |
 | `lib/clients.ts` | Lista firm na podstronie Rekomendacje |
 | `lib/gallery-data.json` | 90 albumów / 862 zdjęcia przeniesione ze starej strony |
 | `lib/gallery.ts` | Tłumaczenia nazw albumów, albumy wyróżnione na stronie głównej |

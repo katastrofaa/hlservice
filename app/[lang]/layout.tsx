@@ -97,7 +97,6 @@ export default async function LangLayout({ children, params }: LayoutProps<"/[la
               addressCountry: site.country,
             },
             areaServed: ["PL", "EU"],
-            sameAs: [site.facebook],
             knowsAbout: [
               "Heavy lift",
               "Oversized cargo handling",

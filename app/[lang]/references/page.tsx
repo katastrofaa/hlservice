@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { ExternalIcon } from "@/components/icons";
 import { PageHeader } from "@/components/PageHeader";
 import { CtaBand } from "@/components/ui";
-import { clients } from "@/lib/clients";
+import { clients, lastTileSpan } from "@/lib/clients";
 import { getDictionary, pageMetadata } from "@/lib/i18n";
 import { href, type Locale } from "@/lib/routes";
 
@@ -45,7 +45,7 @@ export default async function ReferencesPage({ params }: PageProps<"/[lang]/refe
                 </>
               );
               return (
-                <li key={c.name} className="bg-white">
+                <li key={c.name} className={`bg-white ${i === clients.length - 1 ? lastTileSpan(clients.length, { sm: 1 }) : ""}`}>
                   {c.url ? (
                     <a
                       href={c.url}

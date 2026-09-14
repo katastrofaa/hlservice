@@ -63,7 +63,7 @@ const pl = {
     references: {
       title: "Rekomendacje – zaufali nam",
       description:
-        "Zaufali nam m.in. DHL Global Forwarding, BEST LOGISTICS, HAEGER & SCHMIDT INTERNATIONAL, FAMAK S.A., MAKRUM, FAST LINES, Morska Agencja Gdynia i inni partnerzy z całego świata.",
+        "Zaufali nam m.in. Deutsche Bahn, DHL Global Forwarding, BEST LOGISTICS, HAEGER & SCHMIDT INTERNATIONAL, FAMAK S.A., MAKRUM, FAST LINES, Morska Agencja Gdynia i inni partnerzy z całego świata.",
     },
     contact: {
       title: "Kontakt – Heavy Lift Service Sp. z o.o., Szczecin",

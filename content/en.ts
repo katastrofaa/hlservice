@@ -65,7 +65,7 @@ const en: Dictionary = {
     references: {
       title: "References – companies that trust us",
       description:
-        "Our clients include DHL Global Forwarding, BEST LOGISTICS, HAEGER & SCHMIDT INTERNATIONAL, FAMAK S.A., MAKRUM, FAST LINES, Morska Agencja Gdynia and other partners worldwide.",
+        "Our clients include Deutsche Bahn, DHL Global Forwarding, BEST LOGISTICS, HAEGER & SCHMIDT INTERNATIONAL, FAMAK S.A., MAKRUM, FAST LINES, Morska Agencja Gdynia and other partners worldwide.",
     },
     contact: {
       title: "Contact – Heavy Lift Service Sp. z o.o., Szczecin",

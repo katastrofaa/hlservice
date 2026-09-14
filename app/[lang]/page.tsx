@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ClockIcon, GearIcon, HelmetIcon, HydraulicIcon, ShieldIcon, ArrowRightIcon, PhoneIcon } from "@/components/icons";
 import { AlbumCard, ButtonLink, CtaBand, SectionHeading } from "@/components/ui";
-import { clients } from "@/lib/clients";
+import { clients, lastTileSpan } from "@/lib/clients";
 import { albums, featuredSlugs } from "@/lib/gallery";
 import { getDictionary, pageMetadata } from "@/lib/i18n";
 import { href, type Locale } from "@/lib/routes";
@@ -192,8 +192,11 @@ export default async function HomePage({ params }: PageProps<"/[lang]">) {
         <div className="container-site">
           <SectionHeading eyebrow={t.referencesEyebrow} title={t.referencesHeading} />
           <ul className="mt-10 grid grid-cols-2 gap-px bg-steel-200 sm:mt-12 lg:grid-cols-4">
-            {clients.map((c) => (
-              <li key={c.name} className="flex min-h-16 items-center bg-white px-3 py-3 font-display text-[0.95rem] leading-tight sm:min-h-20 sm:px-5 sm:py-4 sm:text-lg font-semibold text-navy-800">
+            {clients.map((c, i) => (
+              <li
+                key={c.name}
+                className={`${i === clients.length - 1 ? lastTileSpan(clients.length) : ""} flex min-h-16 items-center bg-white px-3 py-3 font-display text-[0.95rem] leading-tight sm:min-h-20 sm:px-5 sm:py-4 sm:text-lg font-semibold text-navy-800`}
+              >
                 {c.name}
               </li>
             ))}

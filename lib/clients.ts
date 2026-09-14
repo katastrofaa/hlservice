@@ -17,4 +17,12 @@ export const clients: { name: string; url?: string }[] = [
   { name: "MAKRUM Grupa Kapitałowa", url: "https://makrum.pl/" },
   { name: "MARINE CRANE AB POLAND", url: "https://marinegroup.se/" },
   { name: "TREND PROJEKT Sp. z o.o." },
+  { name: "Deutsche Bahn (DB)", url: "https://int.bahn.de/pl" },
 ];
+
+/** Classes stretching the last tile so a 2/4-column grid never ends with an empty gap. */
+export function lastTileSpan(count: number, { sm = 2 }: { sm?: 1 | 2 } = {}): string {
+  const two = count % 2 === 1 ? (sm === 2 ? "col-span-2" : "sm:col-span-2") : "";
+  const four = { 0: "", 1: "lg:col-span-4", 2: "lg:col-span-3", 3: "lg:col-span-2" }[count % 4 as 0 | 1 | 2 | 3];
+  return `${two} ${four}`.trim();
+}
